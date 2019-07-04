@@ -1,0 +1,25 @@
+@import '../styles.css';
+
+.HeaderMobile {
+    display: none;
+}
+
+.loginLinks {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.loginLinks:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 540px) {
+    .LogoDesktop {
+        display: none;
+    }
+
+    .HeaderMobile {
+        display: block;
+    }
+}
+

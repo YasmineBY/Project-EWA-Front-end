@@ -1,0 +1,71 @@
+@import '../../styles.css';
+
+.contain{
+  width: 100%;
+}
+.Foodbox {
+  width: 100%;
+
+}
+.contain button{
+  width: 20%;
+}
+
+.table{
+  color: rgb(3, 44, 126);
+
+}
+.contain{
+  color: rgb(3, 44, 126);
+}
+
+.foodlistview{
+width: auto;
+height: auto;
+
+  /*background-color: blue;*/
+  /*color: white;*/
+}
+
+.foodlistview ul{
+
+  list-style: none;
+ }
+
+.foodlistview li{
+
+}
+
+.rightbutton{
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.leftbutton{
+  margin-bottom: 10px;
+}
+
+.addbutton{
+  background-color: rgb(220, 220, 220);
+    color: rgb(3, 44, 126);
+    padding: 5px 10px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    margin-left: 10px;
+}
+
+.hostevent{
+  color: rgb(3, 44, 126);
+}
+
+.qauntitybutton{
+  width: 10%;
+  height: auto;
+}
+.qauntitybuttonright{
+  width: 10%;
+  height: 7%;
+  float: right;
+}

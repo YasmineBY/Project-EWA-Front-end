@@ -1,0 +1,43 @@
+<div style="text-align:center">
+  <header class="LogoDesktop">
+    <img src='{{ logo }}'>
+    <h1 class="headerTitle">
+      {{screenTitle}}
+    </h1>
+  </header>
+
+  <header class='HeaderMobile'>
+    <h1 class="LoginTitle">
+      {{screenTitle}}
+    </h1>
+  </header>
+
+
+
+  <form action="" method="POST">
+    <div>
+      <input class="loginInfo" type="text" name="email" placeholder="Email">
+    </div>
+    <br>
+    <div>
+      <input class="loginInfo" type="Password" name="password" placeholder="Password">
+    </div>
+  </form>
+
+  <br>
+  
+  <a> <button class="button" routerLink="/eventOverview" (click)="function()">Login</button> </a>
+
+  <br>
+  <br>
+
+  <div>
+    <a class="linkText" routerLink="/createAccount">Create account</a>
+  </div>
+
+  <br>
+
+  <div>
+    <a class="linkText" routerLink="/forgotPassword">Forgot password?</a>
+  </div>
+</div>

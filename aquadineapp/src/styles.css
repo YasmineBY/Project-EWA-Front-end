@@ -1,0 +1,34 @@
+.button {
+    background-color: rgb(220, 220, 220);
+    color: rgb(3, 44, 126);
+    padding: 10px 20px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    width: auto;
+
+}
+
+.headerTitle{
+    font-size: 180%;
+}
+
+.linkText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(3, 44, 126);
+    
+}
+
+.linkText:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 540px) {
+    .LogoDesktop {
+        display: none;
+    }
+
+    .HeaderMobile {
+        display: block;
+    }
+}

@@ -1,0 +1,79 @@
+<div style="text-align:center">
+	<header class="LogoDesktop">
+		<img src='{{ logo }}'>
+	</header>
+	<h1 class="headerTitle">
+		Create account
+	</h1>
+	<!--Form for account creation-->
+	<form [formGroup]="angForm" method="POST">
+		<div>
+			<input class="form-control" type="text" formControlName="name" placeholder="Name">
+		</div>
+		<div *ngIf="angForm.controls['name'].invalid 
+			&& (angForm.controls['name'].dirty 
+			|| angForm.controls['name'].touched)" class="alert-danger">
+			<div *ngIf="angForm.controls['name'].errors.required">
+				Name is required
+			</div>
+		</div>
+		<br>
+		<div>
+			<input class="form-control" type="email" formControlName="email" placeholder="Email">
+		</div>
+		<div *ngIf="angForm.controls['email'].errors 
+			&& (angForm.controls['email'].dirty 
+			|| angForm.controls['email'].touched)" class="alert-danger">
+			<div *ngIf="angForm.controls['email'].errors.pattern">
+				Email is invalid
+			</div>
+			<div *ngIf="angForm.controls['email'].errors.required">
+				Email is required
+			</div>
+		</div>
+		<br>
+		<div>
+			<input class="form-control" type="password" formControlName="password" placeholder="Password">
+		</div>
+		<div *ngIf="angForm.controls['password'].invalid 
+			&& (angForm.controls['password'].dirty 
+			|| angForm.controls['password'].touched)" class="alert-danger">
+			<div *ngIf="angForm.controls['password'].errors.required">
+				Password is required
+			</div>
+		</div>
+		<br>
+		<div>
+			<input class="form-control" type="password" formControlName="passwordcheck" placeholder="Confirm password"
+				compare="password">
+		</div>
+		<div *ngIf="angForm.controls['passwordcheck'].invalid 
+			&& (angForm.controls['passwordcheck'].dirty 
+			|| angForm.controls['passwordcheck'].touched)" class="alert-danger">
+			<div *ngIf="angForm.controls['passwordcheck'].errors.required">
+				Password is required
+			</div>
+			<!--uses the compare validator-->
+			<div *ngIf="angForm.controls['passwordcheck'].errors['compare']">
+				Passowrds do not match
+			</div>
+		</div>
+		<p *ngIf="validAccountSubmitted && angForm.pristine" class="succes">
+			Account creation complete
+		</p>
+	
+
+	</form>
+	<br>
+	<button click="submitAccount" class="button" (click)="createAccount()">Create</button>
+	<br>
+	<br>
+	<div>
+		<a class="linkText" routerLink=''>Login</a>
+	</div>
+	<br>
+	<div>
+		<a class="linkText" routerLink="/forgotPassword">Forgot password?</a>
+	</div>
+	
+</div>

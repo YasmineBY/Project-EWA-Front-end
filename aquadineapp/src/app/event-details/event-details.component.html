@@ -1,0 +1,32 @@
+<nav-bar></nav-bar>
+
+  <div class="eventdetail">
+
+    <ul>
+      <!--Name of the event-->
+      <li><h1> {{eventName}} </h1></li>
+      <!--location of event-->
+      <li><h3>Location </h3> </li>
+      <li> {{eventLocatie}}</li>
+      <br>
+      <!--date of event-->
+      <li><h3> Date</h3> </li>
+      <li>{{eventDate}}</li>
+
+      <br>
+      <!--details of event-->
+      <li><h3>Event details</h3> </li>
+      <li> {{eventDetails}}</li>
+      <!--status-->
+      <br>
+      <li>    <h3> Status</h3> </li>
+      <li>  accepted </li>
+
+    </ul>
+  </div>
+
+<div style="text-align: center" class="backbutton"  >
+
+  <button class="button"  routerLink="/eventOverview"> Previous </button>
+
+</div>

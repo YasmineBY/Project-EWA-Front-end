@@ -1,0 +1,40 @@
+@import '../../styles.css';
+
+.headText{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.event-view{
+  width: 100%;
+  height: auto;
+  background-color: rgb(3, 44, 126);
+  color: white;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align:center;
+}
+
+.event-view h3{
+  font-weight: bold;
+  font-size: 19px;
+}
+.event-view ul{
+  list-style: none;
+}
+
+.event-view li{
+  padding-bottom: 1px;
+}
+
+.eventlist {
+  list-style: none;
+  text-align: left;
+}
+
+.even-holder{
+  align-content: center;
+}
+

@@ -1,0 +1,48 @@
+<nav-bar></nav-bar>
+
+<div class="hostevent">
+
+  <form [formGroup]="productForm" action="" method="POST">
+    Add product
+    <div>
+      <input class="Foodbox" type="text" formControlName="productname" placeholder="Product name">
+      <div *ngIf="productempty" class="alert-danger">
+        Product is required
+      </div>
+      <div>
+        <button class="addbutton" (click)="addProduct()">Add</button>
+        <button class="addbutton" (click)="deleteProduct()">Delete</button>
+      </div>
+    </div>
+
+  </form>
+
+  <table class="table">
+    <tr>
+      <th>Food and drinks</th>
+    </tr>
+
+    <tr>
+      <td>Hamburger</td>
+    </tr>
+
+    <tr>
+      <td>Milkshake</td>
+    </tr>
+  </table>
+  <div class="foodlistview">
+
+  </div>
+
+  <br>
+
+  Notes
+  <div>
+    <textarea></textarea>
+  </div>
+
+  <br>
+
+  <button routerLink="/createEvent" class="leftbutton button">Previous</button>
+  <button routerLink="/eventCreated" class="rightbutton button">Order</button>
+</div>

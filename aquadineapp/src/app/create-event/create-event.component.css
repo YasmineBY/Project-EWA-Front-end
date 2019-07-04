@@ -1,0 +1,12 @@
+@import '../../styles.css';
+
+
+.hostevent{
+  color: rgb(3, 44, 126);;
+
+  padding-left: 5px;
+  padding-left: 5px;
+}
+.confirmButton{
+  margin-bottom: 10px;
+}

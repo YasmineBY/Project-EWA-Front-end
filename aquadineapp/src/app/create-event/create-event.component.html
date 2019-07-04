@@ -1,0 +1,80 @@
+<nav-bar></nav-bar>
+
+
+<div class="hostevent">
+
+  <div class="headText">
+
+   <h1> Host event </h1>
+
+  </div>
+  <!--Form for creating an event-->
+  <form [formGroup]="createEventForm" method="POST">
+    Event name
+    <div>
+      <input class="form-control" type="text" formControlName="eventName" placeholder="Event name">
+    </div>
+    <div *ngIf="createEventForm.controls['eventName'].invalid 
+			&& (createEventForm.controls['eventName'].dirty 
+			|| createEventForm.controls['eventName'].touched)" class="alert-danger">
+			<div *ngIf="createEventForm.controls['eventName'].errors.required">
+				Event name is required
+			</div>
+		</div>
+    Event date
+    <div>
+      <input class="form-control" type="text" formControlName="eventDate" placeholder="dd-mm-jjjj">
+    </div>
+    <div *ngIf="createEventForm.controls['eventDate'].invalid 
+			&& (createEventForm.controls['eventDate'].dirty 
+			|| createEventForm.controls['eventDate'].touched)" class="alert-danger">
+			<div *ngIf="createEventForm.controls['eventDate'].errors.required">
+				Event date is required
+			</div>
+		</div>
+    Location
+    <div>
+      <input class="form-control" type="text" formControlName="locatie" placeholder="Location">
+    </div>
+    <div *ngIf="createEventForm.controls['locatie'].invalid 
+			&& (createEventForm.controls['locatie'].dirty 
+			|| createEventForm.controls['locatie'].touched)" class="alert-danger">
+			<div *ngIf="createEventForm.controls['locatie'].errors.required">
+				location is required
+			</div>
+		</div>
+    Restaurant
+    <div>
+      <input class="form-control" type="text" formControlName="restaurant" placeholder="Restaurant">
+    </div>
+    <div *ngIf="createEventForm.controls['restaurant'].invalid 
+			&& (createEventForm.controls['restaurant'].dirty 
+			|| createEventForm.controls['restaurant'].touched)" class="alert-danger">
+			<div *ngIf="createEventForm.controls['restaurant'].errors.required">
+				Restaurant is required
+			</div>
+		</div>
+    Event details
+    <div>
+      <input class="form-control" type="text" formControlName="eventDetails" placeholder="Event details">
+    </div>
+    Invited group
+    <div>
+      <input class="form-control" type="text" formControlName="group" placeholder="Group">
+    </div>
+    <div *ngIf="createEventForm.controls['group'].invalid 
+			&& (createEventForm.controls['group'].dirty 
+			|| createEventForm.controls['group'].touched)" class="alert-danger">
+			<div *ngIf="createEventForm.controls['group'].errors.required">
+          Group is required
+			</div>
+		</div>
+
+  </form>
+
+  <br>
+  
+  <button class="button confirmButton" (click)="createEvent()" routerLink="/foodAndDrink"  >Create event</button>
+
+
+</div>

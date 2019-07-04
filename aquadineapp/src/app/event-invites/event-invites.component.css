@@ -1,0 +1,43 @@
+
+@import '../../styles.css';
+
+
+.eventdetail{
+  padding-top: 10px;
+  width: 100%;
+  height: auto;
+  color: rgb(3, 44, 126);
+  font-size: 15px;
+  float: left;
+  padding-right: 5px;
+}
+
+.eventdetail h1{
+
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.eventdetail h2{
+
+  font-size: 20px;
+
+}
+.eventdetail h3{
+
+  font-size: 15px;
+  font-weight: bold;
+
+}
+.eventdetail ul{
+  list-style: none;
+}
+
+.right-button{
+  margin-left: 10px;
+}
+
+.left-button{
+  float:left;
+}

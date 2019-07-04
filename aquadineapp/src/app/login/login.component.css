@@ -1,0 +1,20 @@
+@import '../../styles.css';
+
+.LoginTitle {
+    font-size: 180%;
+    
+}
+
+.HeaderMobile {
+    display: none;
+}
+
+@media screen and (max-width: 540px) {
+    .LogoDesktop {
+        display: none;
+    }
+
+    .HeaderMobile {
+        display: block;
+    }
+}
